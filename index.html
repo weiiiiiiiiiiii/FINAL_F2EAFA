@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AFA動漫網</title>
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/slideshow.css">
+    <link rel="stylesheet" href="./css/box1.css">
+    <link rel="stylesheet" href="./css/news.css">
+    <link rel="stylesheet" href="./css/anime.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif+TC:wght@200..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="./img/AFA.png" alt="AFA-Logo">
+            <h2>AFA動漫網</h2>
+        </div>
+        
+        <nav>
+            <button class="button"><a href="./vc.html">聲優專區</a></button>
+            <button class="button"><a href="./manga.html">漫畫專區</a></button>
+            <button class="button"><a href="./animax.html">動漫專區</a></button>
+            <button class="button"><a href="https://www.ccpa.org.tw/tica/index.php?tpl=11">漫展資訊</a></button>
+            <button class="button"><a href="./aboutus.html">關於我們</a></button>
+        </nav>
+    </header>
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="./img/2.png" alt="" width="100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="./img/3.png" alt="" width="100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="./img/SOLO.png" alt="" width="100%">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+    <div class="box1">
+        <div>
+            <img src="./img/膽大黨1.jpg" alt="">
+            <h5><a href="#anime">近期新番</a></h5>
+        </div>
+        <div>
+            <img src="./img/orange1.jpg" alt="">
+            <h5><a href="./music.html">音樂專區</a></h5>
+        </div>
+        <div>
+            <img src="./img/銀魂.jpg" alt="">
+            <h5><a href="">二創專區</a></h5>
+        </div>
+        <div>
+            <img src="./img/東堂.jpg" alt="">
+            <h5><a href="./manga.html">漫畫專區</a></h5>
+        </div>
+    </div>
+    <div class="news">
+        <div class="allnews" id="news-box1">
+            <h1>本週熱報</h1>
+        </div>
+        <div class="allnews mainews">
+            <div class="secondbox">
+                <div class="secondboximg"><img src="./img/庫拉皮卡.png" alt=""></div>
+                <div class="secondboxtext">
+                    <p>冨樫義博再度宣布休刊! 酷拉皮卡究竟哪時能下船呢?</p>
+                </div>
+            </div>
+        </div>
+        <div class="allnews mainews">
+            <div class="secondbox">
+                <div class="secondboximg"><img src="./img/我英3.png" alt=""></div>
+                <div class="secondboxtext">
+                    <p>我的英雄學院第七季預告放出!!! 即將步入結局?</p>
+                </div>
+            </div>
+        </div>
+        <div class="allnews mainews">
+            <div class="secondbox">
+                <div class="secondboximg"><img src="./img/芙莉蓮1.jpg" alt=""></div>
+                <div class="secondboxtext">
+                    <p>葬送的芙莉蓮人氣角色投票出爐，第一名竟然是他?!</p>
+                </div>
+            </div>
+        </div>
+        <div class="allnews mainews">
+            <div class="secondbox">
+                <div class="secondboximg"><img src="./img/膽大黨2.jpg" alt=""></div>
+                <div class="secondboxtext">
+                    <p>一月即將推出眾多新番，一起看有哪些強力作品吧</p>
+                </div>
+            </div>
+        </div>
+        <div class="viewmore">
+            <button>瀏覽更多消息</button>
+        </div>
+    </div>
+    <div id="anime">
+        <h4>近期新番</h4>
+        <hr>
+        <h6>現正熱播</h6>
+        <div id="animeBtn">
+            <button class="btn active" onclick="filterSelection('all')">顯示全部</button>
+            <button class="btn" onclick="filterSelection('Monday')">星期一</button>
+            <button class="btn" onclick="filterSelection('Tuesday')">星期二</button>
+            <button class="btn" onclick="filterSelection('Wednesday')">星期三</button>
+            <button class="btn" onclick="filterSelection('Thursday')">星期四</button>
+            <button class="btn" onclick="filterSelection('Friday')">星期五</button>
+            <button class="btn" onclick="filterSelection('Saturday')">星期六</button>
+            <button class="btn" onclick="filterSelection('Sunday')">星期日</button>
+        </div>
+        <div class="row">
+            <div class="column Monday">
+                <div class="content">
+                    <a href="https://ani.gamer.com.tw/animeVideo.php?sn=30021" target="_blank"><img src="./img/實教.jpg"
+                            alt="" width="100%"></a>
+                    <h4>
+                        <a href="https://ani.gamer.com.tw/animeVideo.php?sn=30021" target="_blank">實力至上主義教室第二季</a>
+                    </h4>
+                    <p>原作:小說</p>
+                </div>
+            </div>
+            <div class="column Monday">
+                <div class="content">
+                    <a href="https://ani.gamer.com.tw/animeVideo.php?sn=35241"><img src="./img/芙莉蓮2.jpeg" alt=""
+                            width="100%"></a>
+                    <h4>
+                        <a href="https://ani.gamer.com.tw/animeVideo.php?sn=35241" target="_blank">葬送的芙莉蓮</a>
+                    </h4>
+                    <p>原作:漫畫</p>
+                </div>
+            </div>
+            <div class="column Monday">
+                <div class="content">
+                    <a href="https://ani.gamer.com.tw/animeVideo.php?sn=34092" target="_blank"><img src="./img/無職.jpg"
+                            alt="" width="100%"></a>
+                    <h4>
+                        <a href="https://ani.gamer.com.tw/animeVideo.php?sn=34092" target="_blank">無職轉生第二季</a>
+                    </h4>
+                    <p>原作:小說</p>
+                </div>
+            </div>
+            <div class="column Tuesday">
+                <div class="content">
+                    <a href="https://www.netflix.com/tw/title/81564899" target="_blank"><img src="./img/迷宮飯.jpeg" alt="" width="100%"></a>
+                    <h4>
+                        <a href="https://www.netflix.com/tw/title/81564899" target="_blank">迷宮飯</a>
+                    </h4>
+                    <p>原作:漫畫</p>
+                </div>
+            </div>
+            <div class="column Tuesday">
+                <div class="content">
+                    <a href="https://youtu.be/eq4vO0aHu-M?si=vnY3q0w8nUSa7t4t" target="_blank"><img src="./img/鑽石王牌.jpg"
+                            alt="" width="100%"></a>
+                    <h4>
+                        <a href="https://youtu.be/eq4vO0aHu-M?si=vnY3q0w8nUSa7t4t" target="_blank">鑽石王牌</a>
+                    </h4>
+                    <p>原作:漫畫</p>
+                </div>
+            </div>
+            <div class="column Tuesday">
+                <div class="content">
+                    <a href="https://ani.gamer.com.tw/animeVideo.php?sn=9474" target="_blank"><img src="./img/網球王子.jpg"
+                            alt="" width="100%"></a>
+                    <h4>
+                        <a href="https://ani.gamer.com.tw/animeVideo.php?sn=9474" target="_blank">網球王子</a>
+                    </h4>
+                    <p>原作:漫畫</p>
+                </div>
+            </div>
+            <div class="column Wednesday">
+                <div class="content">
+                    <a href="https://ani.gamer.com.tw/animeVideo.php?sn=14651" target="_blank"><img src="./img/排球少年.jpg"
+                            alt="" width="100%"></a>
+                    <h4>
+                        <a href="https://ani.gamer.com.tw/animeVideo.php?sn=14651" target="_blank">排球少年第四季</a>
+                    </h4>
+                    <p>原作:漫畫</p>
+                </div>
+            </div>
+            <div class="column Wednesday">
+                <div class="content">
+                    <a href="https://ani.gamer.com.tw/animeVideo.php?sn=9541" target="_blank"><img src="./img/流浪神差.jpg"
+                            alt="" width="100%"></a>
+                    <h4>
+                        <a href="https://ani.gamer.com.tw/animeVideo.php?sn=9541" target="_blank">流浪神差第二季</a>
+                    </h4>
+                    <p>原作:漫畫</p>
+                </div>
+            </div>
+            <div class="column Wednesday">
+                <div class="content">
+                    <a href="https://ani.gamer.com.tw/animeVideo.php?sn=5575" target="_blank"><img src="./img/獵人.jpg"
+                            alt="" width="100%"></a>
+                    <h4>
+                        <a href="https://ani.gamer.com.tw/animeVideo.php?sn=5575" target="_blank">獵人</a>
+                    </h4>
+                    <p>原作:漫畫</p>
+                </div>
+            </div>
+            <div class="column Thursday">
+                <div class="content">
+                    <a href="https://ani.gamer.com.tw/animeVideo.php?sn=40137" target="_blank"><img src="./img/膽大黨2.jpg"
+                            alt="" width="100%"></a>
+                    <h4>
+                        <a href="https://ani.gamer.com.tw/animeVideo.php?sn=40137" target="_blank">膽大黨</a>
+                    </h4>
+                    <p>原作:漫畫</p>
+                </div>
+            </div>
+            <div class="column Thursday">
+                <div class="content">
+                    <a href="https://ani.gamer.com.tw/animeVideo.php?sn=34074" target="_blank"><img
+                            src="./img/咒術迴戰.jpeg" alt="" width="100%"></a>
+                    <h4>
+                        <a href="https://ani.gamer.com.tw/animeVideo.php?sn=34074" target="_blank">咒術迴戰第二季</a>
+                    </h4>
+                    <p>原作:漫畫</p>
+                </div>
+            </div>
+            <div class="column Thursday">
+                <div class="content">
+                    <a href="https://ani.gamer.com.tw/animeVideo.php?sn=4480" target="_blank"><img src="./img/暗殺教室.jpg"
+                            alt="" width="100%"></a>
+                    <h4>
+                        <a href="https://ani.gamer.com.tw/animeVideo.php?sn=4480" target="_blank">暗殺教室第二季</a>
+                    </h4>
+                    <p>原作:漫畫</p>
+                </div>
+            </div>
+            <div class="column Friday">
+                <div class="content">
+                    <a href="https://ani.gamer.com.tw/animeVideo.php?sn=27366" target="_blank"><img
+                            src="./img/戀上換裝娃娃.jpg" alt="" width="100%"></a>
+                    <h4>
+                        <a href="hhttps://ani.gamer.com.tw/animeVideo.php?sn=27366" target="_blank">戀上換裝娃娃</a>
+                    </h4>
+                    <p>原作:漫畫</p>
+                </div>
+            </div>
+            <div class="column Friday">
+                <div class="content">
+                    <a href="https://ani.gamer.com.tw/animeVideo.php?sn=34056" target="_blank"><img src="./img/堀與宮村.png"
+                            alt="" width="100%"></a>
+                    <h4>
+                        <a href="https://ani.gamer.com.tw/animeVideo.php?sn=34056" target="_blank">堀與宮村第二季</a>
+                    </h4>
+                    <p>原作:漫畫</p>
+                </div>
+            </div>
+            <div class="column Friday">
+                <div class="content">
+                    <a href="https://ani.gamer.com.tw/animeVideo.php?sn=34886" target="_blank"><img src="./img/躍動青春.jpg"
+                            alt="" width="100%"></a>
+                    <h4>
+                        <a href="https://ani.gamer.com.tw/animeVideo.php?sn=34886" target="_blank">躍動青春</a>
+                    </h4>
+                    <p>原作:漫畫</p>
+                </div>
+            </div>
+            <div class="column Saturday">
+                <div class="content">
+                    <a href="https://ani.gamer.com.tw/animeVideo.php?sn=36904" target="_blank"><img
+                            src="./img/休假的壞人先生.jpg" alt="" width="100%"></a>
+                    <h4>
+                        <a href="https://ani.gamer.com.tw/animeVideo.php?sn=36904" target="_blank">休假的壞人先生</a>
+                    </h4>
+                    <p>原作:漫畫</p>
+                </div>
+            </div>
+            <div class="column Saturday">
+                <div class="content">
+                    <a href="https://ani.gamer.com.tw/animeVideo.php?sn=28879" target="_blank"><img src="./img/輝夜姬.jpg"
+                            alt="" width="100%"></a>
+                    <h4>
+                        <a href="https://ani.gamer.com.tw/animeVideo.php?sn=28879" target="_blank">輝夜姬也想談戀愛第三季</a>
+                    </h4>
+                    <p>原作:漫畫</p>
+                </div>
+            </div>
+            <div class="column Saturday">
+                <div class="content">
+                    <a href="https://ani.gamer.com.tw/animeVideo.php?sn=31599" target="_blank"><img src="./img/孤獨搖滾.jpg"
+                            alt="" width="100%"></a>
+                    <h4>
+                        <a href="https://ani.gamer.com.tw/animeVideo.php?sn=31599" target="_blank">孤獨搖滾</a>
+                    </h4>
+                    <p>原作:漫畫</p>
+                </div>
+            </div>
+            <div class="column Sunday">
+                <div class="content">
+                    <a href="https://ani.gamer.com.tw/animeVideo.php?sn=35469" target="_blank"><img
+                            src="./img/SPYxFAMILY.jpg" alt="" width="100%"></a>
+                    <h4>
+                        <a href="https://ani.gamer.com.tw/animeVideo.php?sn=35469" target="_blank">間諜家家酒第二季</a>
+                    </h4>
+                    <p>原作:漫畫</p>
+                </div>
+            </div>
+            <div class="column Sunday">
+                <div class="content">
+                    <a href="https://youtu.be/mZEr-j_VNaE?si=T6eneBM95MTMHL7t" target="_blank"><img src="./img/賈修.jpg"
+                            alt="" width="100%"></a>
+                    <h4>
+                        <a href="https://youtu.be/mZEr-j_VNaE?si=T6eneBM95MTMHL7t" target="_blank">魔法少年賈修</a>
+                    </h4>
+                    <p>原作:漫畫</p>
+                </div>
+            </div>
+            <div class="column Sunday">
+                <div class="content">
+                    <a href="https://ani.gamer.com.tw/animeVideo.php?sn=19849" target="_blank"><img src="./img/進巨.jpg"
+                            alt="" width="100%"></a>
+                    <h4>
+                        <a href="https://ani.gamer.com.tw/animeVideo.php?sn=19849" target="_blank">進擊的巨人</a>
+                    </h4>
+                    <p>原作:漫畫</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer1">
+            <div class="footerall">
+                <h6>宅宅專區</h6>
+                <p>動漫官網</p>
+                <p>預告放出</p>
+                <p>新番情報</p>
+            </div>
+            <div class="footerall">
+                <h6>我要投稿</h6>
+                <p>二創作品</p>
+                <p>AFA交流網</p>
+            </div>
+            <div class="footerall">
+                <h6>加入我們</h6>
+                <p><a href="./aboutus.html">聯絡資訊</a></p>
+                <p>商務洽談</p>
+            </div>
+        </div>
+        <div class="footer2">
+            <img src="./img/fb.png" alt="" class="footerimg1">
+            <img src="./img/ig.png" alt="" class="footerimg2">
+            <img src="./img/yt.png" alt="" class="footerimg3">
+        </div>
+        <div class="footer3">
+            <p>CopyRight &copy; RWei & Rice 網站作業</p>
+        </div>
+    </div>
+    <script src="./script/header.js"></script>
+    <script src="./script/slideshow.js"></script>
+    <script src="./script/anime.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,121 @@
+*{
+    background-color: #FDC23E;
+    box-sizing: border-box;
+    margin: 0rem;
+    padding: 0rem;
+    font-family: "Sansita", sans-serif
+}
+.news{
+    height: 55rem;
+    padding: 3rem 20rem 0rem 20rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.allnews{
+    border: 5px solid #000;
+    width: 100%;
+    margin-top: 1rem;
+}
+#news-box1{
+    display: flex;
+    justify-content: center;
+    border: none;
+}
+#news-box1 h1{
+    font-weight: 900;
+}
+.secondbox{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.secondboximg{
+    width: 8rem;
+    height: 8rem;
+}
+.secondboximg img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.secondboxtext{
+    padding-left: 3rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #FDC23E;
+}
+.secondboxtext:hover{
+    background-color: #FF7761;
+    transition: ease 1s;
+}
+.secondboxtext p{
+    font-size: 1.5rem;
+    font-weight: 700;
+    background-color: transparent;
+}
+.viewmore{
+    border: none;
+    position: absolute;
+    right: 10rem;
+    top: 50rem;
+}
+
+.viewmore button{
+    font-size: 1.2rem;
+    padding: 5px 10px;
+    border: transparent;
+    background-color: #274555;
+    color: #fff;
+    cursor: pointer;
+}
+
+.viewmore button:hover{
+    transform: scale(1.05);
+    color: #fff;
+    background-color: #666;
+}
+
+/* 手機尺寸調整 */
+@media (max-width: 910px) {
+    .news {
+        padding: 2rem 1rem; 
+        height: auto; 
+    }
+
+    .allnews {
+        border-width: 3px; 
+    }
+
+    .secondbox {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem; 
+    }
+
+    .secondboximg {
+        width: 6rem;
+        height: 6rem;
+    }
+
+    .secondboxtext {
+        padding: 1rem;
+        text-align: center; 
+    }
+
+    .secondboxtext p {
+        font-size: 1.2rem; 
+    }
+
+    .viewmore {
+        position: static; 
+        text-align: center; 
+        margin-top: 2rem;
+    }
+
+    .viewmore button {
+        width: 100%; 
+        padding: 10px; 
+    }
+}

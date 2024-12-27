@@ -1,0 +1,264 @@
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#guide{
+    display: flex;
+    padding-left: 20px;
+    color: #585858;
+}
+#guide a{
+    text-decoration: none;
+    color: #585858;
+}
+#guide a:hover{
+    color: brown;
+}
+h4 {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+article{
+    margin: 0 8%;
+}
+
+.va-information{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.actor-img{
+    border-radius: 10px;  
+}
+
+.introduction{
+    background-color: rgb(253,194,62,0.6);
+    border-radius: 10px;
+    display: table;
+    width: 95%;
+    padding-left: 5%;
+}
+.introduction-content{
+    display: table-cell;
+    vertical-align: middle; 
+    line-height: 30px;
+}
+#introduction-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+h1{
+    font-size: 28px;
+    display: table-cell;
+}
+h2{
+    font-size: 20px;
+}
+h3{
+    font-size: 19px;
+}
+
+#xinyan{
+    margin: 0;
+}
+#xinyan-i{
+    margin: 0;
+}
+
+.experience{
+    margin-top: 5%;
+}
+
+hr{
+    margin-top: 2%;
+    border: 3px solid #000;
+}
+
+.va-debut{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    margin-top: 3%;
+}
+
+#va-debut{
+    display: grid;
+    place-items: center;
+    margin-right: 20%;
+    height: 70px;
+}
+
+.va-introduction{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+#va-introduction{
+    display: grid;
+    place-items: center;
+    margin-right: 20%;
+    height: 160px;
+}
+
+.va-winning{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+#va-winning{
+    display: grid;
+    place-items: center;
+    margin-right: 20%;
+    height: 110px;
+}
+
+.in-bgc{
+    background-color: #F9A11B;
+}
+.content{
+    padding-left: 5%;
+    display: flex;
+    align-items: center;
+}
+
+.role{
+    margin-top: 5%;
+}
+
+.role-card{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5%;
+}
+
+.card{
+    width: 200px;
+    border: 2px solid #000;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.card-img{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #000;
+}
+
+.card-img img{
+    width: 100%;
+    height: auto;
+}
+
+.card-text{
+    border: 1px solid #000;
+    background-color: #F9A11B;
+}
+
+.link{
+    margin-top: 5%;
+}
+#link{
+    font-weight: 400;
+}
+
+.link-connect{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.connect{
+    margin-top: 2rem;
+    margin-left: 2rem;
+    color: #000;
+    text-decoration: none;
+}
+
+.connect:hover{
+    color: brown;
+}
+
+@media (max-width: 980px){
+
+    .actor-img{
+        width: 180px;
+        height: auto;
+        margin-right: 10%;
+    }
+    h1{
+        font-size: 20px;
+    }
+    h2{
+        font-size: 16px;
+    }
+    h3{
+        font-size: 14px;
+    }
+    h4{
+        font-size: 10px;
+    }
+    .introduction-content{ 
+        line-height: 25px;
+    }
+
+    #va-debut{
+        height: 50px;
+    }
+    
+    #va-introduction{
+        height: 120px;
+    }
+    
+    #va-winning{
+        height: 80px;
+    }
+    .card{
+        width: 120px;
+    }
+    .connect{
+        margin-top: 1.5rem;
+    }
+}
+
+@media (max-width: 500px){
+    .actor-img{
+        width: 120px;
+        height: auto;
+        margin-right: 10%;
+    }
+    h1{
+        font-size: 14px;
+    }
+    h2{
+        font-size: 10px;
+    }
+    h3{
+        font-size: 9px;
+    }
+    h4{
+        font-size: 8px;
+    }
+    .introduction-content{ 
+        line-height: 16px;
+    }
+
+    #va-debut{
+        height: 35px;
+    }
+    
+    #va-introduction{
+        height: 80px;
+    }
+    
+    #va-winning{
+        height: 70px;
+    }
+    .card{
+        width: 70px;
+    }
+    .connect{
+        margin-top: 1rem;
+    }
+}

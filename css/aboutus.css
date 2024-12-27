@@ -1,0 +1,45 @@
+main {
+    padding: 50px;
+    height: 20rem;
+    background-color: #FDC23E;
+}
+
+#guide{
+    display: flex;
+    padding-top: 20px;
+    padding-left: 20px;
+    color: #585858;
+    background-color: #FDC23E;
+}
+
+#guide a{
+    text-decoration: none;
+    color: #585858;
+}
+
+#guide a:hover{
+    color: brown;
+}
+
+.contact-info {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #FF7761;
+    
+}
+
+.contact-info h2 {
+    margin-top: 0;
+    color: #333;
+    background-color: #FF7761;
+}
+
+.contact-info p {
+    margin: 10px 0;
+    color: #555;
+    background-color: #FF7761;
+}

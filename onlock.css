@@ -1,0 +1,555 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#guide{
+    display: flex;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    color: #585858;
+}
+#guide a{
+    text-decoration: none;
+    color: #585858;
+}
+#guide a:hover{
+    color: brown;
+}
+
+#backToTop {
+    width: 70px;
+    height: 70px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background-color: #3c7a9b;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-size: 14px;
+    z-index: 1000;
+    display: none;
+    /* 默认隐藏按钮 */
+}
+
+#backToTop:hover {
+    background-color: #235a78;
+}
+
+.information {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    margin: 0 10%;
+}
+
+.swiper {
+    width: 100%;
+    height: auto;
+}
+
+
+.swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.swiper-slide img {
+    display: flex;
+    justify-content: center;
+    display: block;
+    width: 220px;
+    height: 100%;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+h3 {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+h4 {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.heart-sit {
+    font-weight: 700;
+}
+
+.word {
+    padding-left: 1%;
+    display: table-cell;
+    vertical-align: middle;
+    line-height: 30px;
+}
+
+.in {
+    margin: 0 10%;
+}
+
+#in1 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#end {
+    text-align: right;
+    color: red;
+}
+
+#in2 {
+    width: 60%;
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+}
+
+article {
+    background-color: #FCFCFC;
+}
+
+.content {
+    margin-top: 5%;
+}
+
+.name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff7761;
+}
+
+.name:hover {
+    background-color: #e16856;
+}
+
+.aclass {
+    display: none;
+}
+
+.bclass {
+    display: none;
+}
+
+.tclass {
+    display: none;
+}
+
+.vclass {
+    display: none;
+}
+
+.hclass {
+    display: none;
+}
+
+.pclass {
+    display: none;
+}
+
+.cclass {
+    display: none;
+}
+
+.dclass {
+    display: none;
+}
+
+.heirs {
+    display: none;
+}
+
+
+.card {
+    margin-left: 10%;
+    margin-right: 7%;
+    margin-top: 3%;
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+}
+
+.card-in {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 5%;
+    margin-right: 0;
+    background-color: rgba(255, 229, 229, 0.8);
+    margin-left: 3%;
+    border-radius: 20%;
+    border-right: 5px solid #e6e6e6;
+    border-bottom: 5px solid #e6e6e6;
+}
+
+
+.card-img img {
+    height: 240px;
+    border-radius: 50%;
+}
+
+.card-img {
+    height: 240px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.card-in1 {
+    padding-left: 10%;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.card-in2 {
+    margin-left: 3%;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.vc {
+    line-height: 0;
+    padding: 0;
+    padding-left: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 3%;
+    display: flex;
+    justify-content: end;
+}
+
+
+.vc-herf {
+    text-decoration: none;
+    color: #000;
+}
+
+.vc-herf:hover {
+    color: brown;
+}
+
+.h-card {
+    margin-left: 10%;
+    margin-right: 7%;
+    margin-top: 4%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 3fr 1fr;
+}
+
+.heir-n {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    font-weight: 600 !important;
+}
+
+.heir {
+    padding-left: 10%;
+    display: table-cell;
+    vertical-align: middle;
+    background-color: rgb(253, 193, 63, 0.8);
+    padding-right: 5%;
+}
+
+.h-vc {
+    display: flex;
+    align-items: end;
+    background-color: rgb(253, 193, 63, 0.8);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding-right: 20%;
+}
+
+.swiper-container {
+    margin-top: 1%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.song {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.song img {
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+}
+
+.info {
+    /* display: none; */
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
+    /* 渐变效果 */
+    width: 100%;
+    height: 25%;
+    color: #dadada;
+    padding-left: 5%;
+    transition: height 0.5s ease;
+}
+
+.info:hover {
+    height: 45%;
+}
+
+.coverflow-container {
+    width: 33%;
+}
+
+#line {
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+}
+
+#line hr {
+    border: 2px solid blanchedalmond;
+    width: 40%;
+}
+
+#line h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700 !important;
+}
+
+#movie {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#movie-img img {
+    width: 270px;
+    height: auto;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+#text-area {
+    width: 55%;
+    margin-left: 50px;
+
+    display: flex;
+    justify-content: center;
+    /* 水平置中 */
+    align-items: center;
+    /* 垂直置中 */
+    height: 100%;
+    /* 確保父容器有高度 */
+    text-align: center;
+    /* 多行文字居中 */
+    line-height: 50px;
+}
+
+#text-area h2 {
+    font-weight: 700 !important;
+}
+
+article {
+    padding-bottom: 8%;
+    width: 100%;
+}
+
+@media (max-width: 980px) {
+
+    .information {
+        display: grid;
+        grid-template-columns: 1.5fr 3fr;
+        padding: 0;
+    }
+
+
+    .swiper-slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .swiper-slide img {
+        display: flex;
+        justify-content: center;
+        display: block;
+        width: 180px;
+        height: 95%;
+    }
+
+    .word {
+        padding-left: 5%;
+        flex-wrap: wrap;
+    }
+
+    h1 {
+        font-size: 20px !important;
+        font-weight: bold;
+    }
+
+    h2 {
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    h3 {
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    h4 {
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+    .word {
+        display: table-cell;
+        vertical-align: middle;
+        line-height: 25px;
+    }
+
+    .team img {
+        height: 120px;
+    }
+
+    .card-img img {
+        width: auto;
+        height: 150px;
+    }
+
+    .card-img {
+        width: auto;
+        height: 150px;
+    }
+
+    .song {
+        height: auto;
+        width: 300px;
+    }
+
+    .song img {
+        height: auto;
+        width: 350px;
+    }
+
+    .coverflow-container {
+        width: 36%;
+    }
+
+    #movie-img img {
+        width: 200px;
+    }
+    #text-area{
+        line-height: 30px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .information {
+        display: grid;
+        grid-template-columns: 2.5fr 3fr;
+        padding: 0;
+    }
+
+
+    .swiper-slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .swiper-slide img {
+        display: flex;
+        justify-content: center;
+        display: block;
+        width: 170px;
+        height: 100%;
+    }
+
+    .word {
+        padding-left: 5%;
+        flex-wrap: wrap;
+        display: table-cell;
+        vertical-align: middle;
+        line-height: 20px;
+    }
+
+    h1 {
+        font-size: 16px !important;
+        font-weight: bold;
+    }
+
+    h2 {
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    h3 {
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+    h4 {
+        font-size: 10px;
+        font-weight: 500;
+    }
+
+    .team img {
+        height: 90px;
+    }
+
+    .card-img img {
+        width: auto;
+        height: 100px;
+    }
+
+    .card-img {
+        width: auto;
+        height: 100px;
+    }
+
+    .song {
+        height: auto;
+        width: 280px;
+    }
+
+    .song img {
+        height: auto;
+        width: 280px;
+    }
+
+    .coverflow-container {
+        padding-top: 2%;
+        width: 58%;
+    }
+
+    #movie-img img {
+        width: 120px;
+    }
+    #text-area{
+        line-height: 20px;
+    }
+}
